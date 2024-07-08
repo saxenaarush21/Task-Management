@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    background: #eeee;
+    max-width: 300px;
+    min-height: calc(100vh - 60px);
+    margin: 20px;
+    border-radius: 10px;
+    padding: 20px 0 0 20px;
+    position: relative;
+}
+.nav-ar{
+    margin-left: 10px;
+}
+nav h1{
+    font-size: 35px;
+    color: #333333;
+}
+nav h2{
+    margin-top: 30px;
+    font-size: 12px;
+    color: #333333;
+}
+nav ul{
+    margin-top: 10px;
+}
+nav ul li{
+    list-style: none;
+    margin: 15px 0 0 10px;
+    display: flex;
+    align-items: center;
+}
+nav ul li a, .lists a{
+    text-decoration: none;
+    color: #555555;
+    padding-left: 25px;
+    font-weight: 500;
+    cursor: pointer;
+}
+nav ul li svg, .lists svg{
+    width: 15px;
+    position: absolute;
+    top: 50;
+    transform: translateX(-50);
+}
+
+.lists{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+}
+.list{
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.block{
+    display: block;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 3px;
+    margin-left: 3px;
+}
+.block{
+    background-color: #ff595e;
+}
+.block-red{
+    background-color: #ff595e;
+}
+.block-blue{
+    background-color: #1982c4;
+}
+.block-green{
+    background-color: #06d6a0;
+}
+.block-orange{
+    background-color: #f77f00;
+}
+.block-yellow{
+    background-color: #ffd166;
+}
+
+.prsnl{
+    padding-left: 10px;
+}
+.adds{
+    display: flex;
+    margin-left: 5px;
+    align-items: center;
+}
+.add{
+    width: 20px;
+}
+
+.tags{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: left;
+    margin-bottom: 50px;
+}
+.tag, .add-tag{
+    border: none;
+    padding: 5px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 3px;
+}
+.tag{
+    background-color: pink;
+    min-width: 55px;
+}
+.tag-pink{
+    background-color: pink;
+}
+.tag-skyblue{
+    background-color: skyblue;
+}
+.tag-lightgreen{
+    background-color: lightgreen;
+}
+.tag-lightwsalmon{
+    background-color: lightsalmon;
+}
+.tag-peachpuff{
+    background-color: peachpuff;
+}
+.add-tag{
+    background-color: #dddd;
+}
+.signout{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 20px;
+}
+.signout a{
+    text-decoration: none;
+    color: #555555;
+    padding-left: 25px;
+    font-weight: 500;
+}
+.signout svg{
+    width: 15px;
+    position: absolute;
+    top: 50;
+    transform: translateX(-50);
+}

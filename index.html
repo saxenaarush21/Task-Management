@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="nav.css">
+</head>
+<body>
+    <main>
+        <nav>
+            <h1>Menu</h1>
+            <article class="nav-ar">
+                <h2>TASKS</h2>
+                <ul class="tasks">
+                    <li class="today">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#555555"><path d="M580-240q-42 0-71-29t-29-71q0-42 29-71t71-29q42 0 71 29t29 71q0 42-29 71t-71 29ZM200-80q-33 0-56.5-23.5T120-160v-560q0-33 23.5-56.5T200-800h40v-80h80v80h320v-80h80v80h40q33 0 56.5 23.5T840-720v560q0 33-23.5 56.5T760-80H200Zm0-80h560v-400H200v400Zm0-480h560v-80H200v80Zm0 0v-80 80Z"/></svg>
+                        <a href="#">Today</a>
+                    </li>
+
+                    <li class="upcoming">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#555555"><path d="M600-80v-80h160v-400H200v160h-80v-320q0-33 23.5-56.5T200-800h40v-80h80v80h320v-80h80v80h40q33 0 56.5 23.5T840-720v560q0 33-23.5 56.5T760-80H600ZM320 0l-56-56 103-104H40v-80h327L264-344l56-56 200 200L320 0ZM200-640h560v-80H200v80Zm0 0v-80 80Z"/></svg>
+                        <a href="#">Upcoming</a>
+                    </li>
+                    <li class="notes">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#555555"><path d="M200-200h360v-200h200v-360H200v560Zm0 80q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v400L600-120H200Zm80-280v-80h200v80H280Zm0-160v-80h400v80H280Zm-80 360v-560 560Z"/></svg>
+                        <a href="#">Sticky Notes</a>
+                    </li>
+                </ul>
+                <h2>LISTS</h2>
+                <ul class="lists">
+                    <div class="lists" id="lists">
+                        <div class="list" id="originalList">
+                            <span class="block" id="block"></span>
+                            <a href="#" class="prsnl">Personal</a>
+                        </div>
+                    </div>
+                    <div class="adds">
+                        <svg class="add" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#555555"><path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"/></svg>
+                        <a class="add-list" id="add-list">Add new List</a>
+                    </div>
+                </ul>
+                <h2>TAGS</h2>
+                <div class="tags" id="tags">
+                    <input type="button" class="tag" id="tag" value="Tag 1">
+                    <input type="button" class="add-tag" id="add-tag" value="+ Add Tag" onclick="getColor()">
+                </div>
+            </article>
+            <div class="signout">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#555555"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h280v80H200Zm440-160-55-58 102-102H360v-80h327L585-622l55-58 200 200-200 200Z"/></svg>
+                <a href="#">Sign Out</a>
+            </div>
+        </nav>
+    </main>
+    <script src="tag.js"></script>
+    <script src="list.js"></script>
+</body>
+</html>
